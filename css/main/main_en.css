@@ -1,0 +1,102 @@
+
+.sign_in {
+  margin: 0;
+  padding: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1.7s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  filter: blur(100px);
+}
+
+.sign_in:hover ~ body {
+  -webkit-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.sign_in:hover {
+  background: url("../../images/traffic-lights-in-city-at-night.jpg") no-repeat fixed center;
+  z-index: 1;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, .8);
+  filter: blur(0);
+}
+
+.sign_in h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 34em;
+  height: 3em;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 0.625em;
+  padding-left: 0.625em;
+  border-radius: 5px;
+  margin-right: 3em;
+}
+
+input:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border: rgba(0, 0, 0, 0.7);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+button {
+  width: 17em;
+  height: 3.125em;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+  color: white;
+  border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+}
+
+.forgot {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  color: white;
+  text-align: right;
+  margin-left: 2em;
+}
